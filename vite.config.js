@@ -12,8 +12,8 @@ export default defineConfig({
     vue(),
     VitePWA({
       manifest: {
-        name: `Depot Dima'`,
-        short_name: `Depot Dima'`,
+        name: `Depot Agaf`,
+        short_name: `Depot Agaf`,
         icons: [
           {
             src: 'android-chrome-192x192.png',
