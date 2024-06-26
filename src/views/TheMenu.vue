@@ -142,7 +142,7 @@
       position: relative;
       grid-area: storage;
       width: 100%;
-      font-size: 3.5em;
+      font-size: 3em;
       background: $col-main-dark !important;
       border: 0.5dvh solid $col-text;
     }
