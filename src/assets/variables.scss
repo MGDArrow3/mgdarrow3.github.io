@@ -1,0 +1,19 @@
+// SCSS переменные
+$col-bg: var(--col-bg);
+$col-text: var(--col-text);
+$col-revers: var(--col-revers);
+$col-main: var(--col-main);
+$col-main-light: var(--col-main-light);
+$col-main-dark: var(--col-main-dark);
+$col-green: var(--col-green);
+$col-red: var(--col-red);
+:root {
+  --col-bg: #a1d8c6;
+  --col-text: #1c301c;
+  --col-revers: #fff;
+  --col-main-light: #6faea0;
+  --col-main: #44a486;
+  --col-main-dark: #1c6c43;
+  --col-green: #1c6c43;
+  --col-red: #9a2828;
+}

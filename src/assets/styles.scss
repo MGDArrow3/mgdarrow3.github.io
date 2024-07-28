@@ -1,0 +1,211 @@
+@import '@/assets/reset';
+@import '@/assets/variables';
+@import 'https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap';
+body {
+  width: 100vw;
+  height: 100dvh;
+  overflow: hidden;
+  color: $col-text;
+  font-weight: 400;
+
+  // font-size: 2dvh;
+  font-size: 4vw;
+  font-family: Oswald, sans-serif;
+  background-color: $col-bg;
+  user-select: none;
+}
+* > svg {
+  font-size: 0.8em;
+}
+h1 {
+  padding: 0.8dvh 1dvh;
+  color: $col-revers;
+  font-weight: 600;
+  font-size: 1.5em;
+  letter-spacing: 0.1dvh;
+  text-align: center;
+  text-transform: uppercase;
+  background: $col-main-dark;
+  border: 0.5dvh solid $col-text;
+  border-radius: 1dvh;
+  & svg {
+    margin-right: 1dvh;
+    font-size: 1em;
+    line-height: 20dvh;
+  }
+}
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5dvh;
+  width: 100vw;
+  height: 100dvh;
+  padding: 1dvh;
+}
+fieldset {
+  max-height: 80dvh;
+  padding: 1dvh;
+  overflow: auto;
+  font-weight: 600;
+  background: $col-main;
+  border: 0.3dvh solid $col-text;
+  border-radius: 0.5dvh;
+  & legend {
+    max-width: 90%;
+    padding: 0.5dvh 5dvh;
+    color: $col-revers;
+    font-weight: 500;
+    font-size: 1.3em;
+    letter-spacing: 0.3dvh;
+    text-align: center;
+    text-transform: uppercase;
+    background: $col-main-dark;
+    border: 0.3dvh solid $col-text;
+    border-radius: 0.5dvh;
+  }
+  & h2 {
+    color: $col-red;
+    font-weight: 700;
+    font-size: 1.7em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  & h3 {
+    margin: 2dvh;
+    padding: 1dvh;
+    color: $col-revers;
+    font-weight: 500;
+    font-size: 1.3em;
+    letter-spacing: 0.2dvh;
+    text-align: center;
+    text-transform: uppercase;
+    background: $col-main-dark;
+    border: 0.3dvh solid $col-text;
+    border-radius: 1dvh;
+  }
+  & .form__double {
+    display: flex;
+    gap: 1dvh;
+    align-items: end;
+    & .btn-select {
+      justify-content: center;
+      width: 45%;
+      padding-left: 0.5dvh;
+    }
+  }
+  & .search {
+    & input {
+      height: 5.5dvh;
+      margin-bottom: 1dvh;
+      color: $col-main-dark;
+      font-size: 0.7em;
+      border: 0.3dvh solid $col-main-dark;
+      &::-webkit-search-cancel-button {
+        background-size: 2.9vw;
+      }
+    }
+  }
+}
+.loader {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 2.5dvh;
+  height: 2.5dvh;
+  border: 0.5dvh solid $col-revers;
+  border-bottom-color: $col-main-dark;
+  border-radius: 50%;
+  animation: kf-rotation 1s linear infinite;
+}
+
+@keyframes kf-rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  &__name {
+    width: 40%;
+    padding-right: 1dvh;
+    font-weight: 600;
+    text-align: right;
+  }
+  &__data {
+    width: 60%;
+    & span {
+      display: block;
+      width: 100%;
+    }
+  }
+  &__row {
+    width: 100%;
+    text-align: center;
+  }
+}
+.btn-select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 6.5dvh;
+  margin-top: 0.5dvh;
+  margin-bottom: 1.5dvh;
+  color: $col-revers;
+  font-weight: 500;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background: $col-main-dark;
+  border: 0.3dvh dashed $col-text;
+  border-radius: 1dvh;
+  &--act {
+    justify-content: start;
+    padding-left: 1dvh;
+    color: $col-text;
+    text-transform: capitalize;
+    background: transparent;
+    border: 0.3dvh solid $col-text;
+    border-radius: 0.5dvh;
+  }
+  &__label {
+    padding-left: 0.5dvh;
+    font-weight: 600;
+    font-size: 1.5em;
+  }
+}
+.basic__info {
+  &-expired {
+    position: absolute;
+    top: 0;
+    right: 1dvh;
+
+    // width: 10vw;
+  }
+  &-name {
+    padding: 0 2dvh;
+    font-weight: 500;
+  }
+  &-count {
+    font-weight: 400;
+    font-size: 0.8em;
+    text-transform: lowercase;
+  }
+  &-man {
+    font-weight: 400;
+    font-size: 0.6em;
+  }
+}
+.borderRed {
+  border: 0.8dvh solid $col-red;
+  border-radius: 2dvh;
+}
+.borderGreen {
+  border: 0.8dvh solid $col-green;
+  border-radius: 2dvh;
+}
